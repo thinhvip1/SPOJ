@@ -33,7 +33,7 @@ ll solve1(ll a[], int n, int low, int high, int cows){
         if(check(a, n, mid, cows) == true){ // nếu k/c nhỏ nhất giữa 2 con bò đặt được ở vị trí mid thì ktra xem bên phải còn thỏa mãn không
             low = mid + 1;
         }
-        else high = mid - 1;
+        else high = mid - 1; // ngược lại ktra bên trái
     }
     return high;
 }
